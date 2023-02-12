@@ -34,15 +34,7 @@ if run_button:
         strategy = [];
 
         # Lets get the list of cities:
-        # royal_cities = ['Martlock','Fort Sterling','Thetford','Bridgewatch','Lymhurst']
-        royal_cities = ['Fort Sterling','Bridgewatch','Lymhurst']
-
-
-
-
-
-
-
+        royal_cities = ['Martlock','Fort Sterling','Thetford','Bridgewatch','Lymhurst']
 
 
 
