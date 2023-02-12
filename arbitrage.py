@@ -74,7 +74,7 @@ if run_button:
         #     print('After tax and setup fee of 10.5%: ' + str(raw_profit-fees))
         #     print('ROI: ' + str((raw_profit-fees)/(100*best_buy_price)*100))
         #     print('\n\n')
-            if(best_sell_price< 15 or (raw_profit-fees)/best_buy_price < 0.15):
+            if(best_sell_price< 15 or (raw_profit-fees)/best_buy_price < 0.5):
                 continue
             strategy.append([item_id,best_buy_city,best_buy_price,best_sell_city,best_sell_price,best_sell_price-best_buy_price,raw_profit,fees,raw_profit-fees,(raw_profit-fees)/(best_buy_price)])
             
