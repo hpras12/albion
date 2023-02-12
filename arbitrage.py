@@ -37,8 +37,6 @@ if run_button:
         royal_cities = ['Fort Sterling','Bridgewatch','Lymhurst']
 
 
-
-
         item_ids = ['T1_ROCK','T2_ROCK','T3_ROCK','T4_ROCK','T5_ROCK','T6_ROCK','T7_ROCK','T8_ROCK']
         item_ids += ['T1_WOOD','T2_WOOD','T3_WOOD','T4_WOOD','T5_WOOD','T6_WOOD','T7_WOOD','T8_WOOD']
         item_ids += ['T1_FIBER','T2_FIBER','T3_FIBER','T4_FIBER','T5_FIBER','T6_FIBER','T7_FIBER','T8_FIBER']
@@ -74,8 +72,8 @@ if run_button:
         #     print('After tax and setup fee of 10.5%: ' + str(raw_profit-fees))
         #     print('ROI: ' + str((raw_profit-fees)/(100*best_buy_price)*100))
         #     print('\n\n')
-            if(best_sell_price< 15 or (raw_profit-fees)/best_buy_price < 0.5):
-                continue
+            #if(best_sell_price< 15 or (raw_profit-fees)/best_buy_price < 0.5):
+                #continue
             strategy.append([item_id,best_buy_city,best_buy_price,best_sell_city,best_sell_price,best_sell_price-best_buy_price,raw_profit,fees,raw_profit-fees,(raw_profit-fees)/(best_buy_price)])
             
         df = pd.DataFrame(strategy,columns=['Item','BuyCity','BuyPrice','SellCity','SellPrice','Spread','RawProfit','Fees','NetIncome','ROI'])
