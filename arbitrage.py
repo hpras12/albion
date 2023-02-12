@@ -39,13 +39,7 @@ if run_button:
 
         item_ids = ['T1_ROCK','T2_ROCK','T3_ROCK','T4_ROCK','T5_ROCK','T6_ROCK','T7_ROCK','T8_ROCK']
         item_ids += ['T1_WOOD','T2_WOOD','T3_WOOD','T4_WOOD','T5_WOOD','T6_WOOD','T7_WOOD','T8_WOOD']
-        item_ids += ['T1_FIBER','T2_FIBER','T3_FIBER','T4_FIBER','T5_FIBER','T6_FIBER','T7_FIBER','T8_FIBER', 'T2_CLOTH',
-'T3_CLOTH',
-'T4_CLOTH',
-'T5_CLOTH',
-'T6_CLOTH',
-'T7_CLOTH',
-'T8_CLOTH']
+        item_ids += ['T1_FIBER','T2_FIBER','T3_FIBER','T4_FIBER','T5_FIBER','T6_FIBER','T7_FIBER','T8_FIBER', 'T2_CLOTH']
         item_ids += ['T1_ORE','T2_ORE','T3_ORE','T4_ORE','T5_ORE','T6_ORE','T7_ORE','T8_ORE']
         item_ids += ['T1_HIDE','T2_HIDE','T3_HIDE','T4_HIDE','T5_HIDE','T6_HIDE','T7_HIDE','T8_HIDE']
         
