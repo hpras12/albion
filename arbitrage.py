@@ -69,7 +69,7 @@ if run_button:
         #     print("Spread of: " + str(best_sell_price-best_buy_price) + ' per unit')
             raw_profit = (best_sell_price-best_buy_price)
         #     print('For an investment of 100 units you get: '+str(raw_profit))
-            fees = best_sell_price*0.065
+            fees = best_sell_price*0.105
         #     print('Fees: ' + str(fees))
         #     print('After tax and setup fee of 10.5%: ' + str(raw_profit-fees))
         #     print('ROI: ' + str((raw_profit-fees)/(100*best_buy_price)*100))
