@@ -34,7 +34,7 @@ if run_button:
         strategy = [];
 
         # Lets get the list of cities:
-        royal_cities = ['Fort Sterling','Bridgewatch','Lymhurst']
+        royal_cities = ['Fort Sterling','Bridgewatch','Lymhurst', 'Carleon']
 
 
         item_ids = ['T1_ROCK','T2_ROCK','T3_ROCK','T4_ROCK','T5_ROCK','T6_ROCK','T7_ROCK','T8_ROCK']
@@ -42,24 +42,7 @@ if run_button:
         item_ids += ['T1_FIBER','T2_FIBER','T3_FIBER','T4_FIBER','T5_FIBER','T6_FIBER','T7_FIBER','T8_FIBER']
         item_ids += ['T1_ORE','T2_ORE','T3_ORE','T4_ORE','T5_ORE','T6_ORE','T7_ORE','T8_ORE']
         item_ids += ['T1_HIDE','T2_HIDE','T3_HIDE','T4_HIDE','T5_HIDE','T6_HIDE','T7_HIDE','T8_HIDE']
-        item_ids += ['T2_POTION_HEAL','T4_POTION_HEAL',
-'T6_POTION_HEAL',
-'T2_POTION_ENERGY',
-'T4_POTION_ENERGY',
-'T6_POTION_ENERGY',
-'T3_POTION_REVIVE',
-'T5_POTION_REVIVE',
-'T7_POTION_REVIVE',
-'T3_POTION_STONESKIN',
-'T5_POTION_STONESKIN',
-'T7_POTION_STONESKIN',
-'T3_POTION_SLOWFIELD',
-'T5_POTION_SLOWFIELD',
-'T7_POTION_SLOWFIELD',
-'T4_POTION_COOLDOWN',
-'T6_POTION_COOLDOWN',
-'T8_POTION_COOLDOWN',
-'T8_POTION_CLEANSE']
+        
 
 
         for item_id in item_ids:
