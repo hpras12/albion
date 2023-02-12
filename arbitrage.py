@@ -67,14 +67,15 @@ if run_button:
         #     print("Buy asset from: " + best_buy_city + ' for a price of: ' + str(best_buy_price))
         #     print("Sell asset to: " + best_sell_city + ' for a price of: ' + str(best_sell_price))
         #     print("Spread of: " + str(best_sell_price-best_buy_price) + ' per unit')
-            raw_profit = (best_sell_price-best_buy_price)*999
+            raw_profit = (best_sell_price-best_buy_price)
         #     print('For an investment of 100 units you get: '+str(raw_profit))
-            fees = 100*best_sell_price*0.105
+            fees = best_sell_price*0.105
         #     print('Fees: ' + str(fees))
         #     print('After tax and setup fee of 10.5%: ' + str(raw_profit-fees))
         #     print('ROI: ' + str((raw_profit-fees)/(100*best_buy_price)*100))
         #     print('\n\n')
-            
+            if(best_sell_price< 15 or (raw_profit-fees)/best_buy_price < 0.5):
+                continue
             strategy.append([item_id,best_buy_city,best_buy_price,best_sell_city,best_sell_price,best_sell_price-best_buy_price,raw_profit,fees,raw_profit-fees,(raw_profit-fees)/(999*best_buy_price)*100])
             
         df = pd.DataFrame(strategy,columns=['Item','BuyCity','BuyPrice','SellCity','SellPrice','Spread','RawProfit','Fees','NetIncome','ROI'])
